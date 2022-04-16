@@ -1,0 +1,44 @@
+<!DOCTYPE >
+<html>
+<head>
+   <meta charset="UTF-8"> 
+   <title>Price Display Page</title>
+   
+   <link href="reset.css" rel="stylesheet">
+   <link href="NKL_style.css" rel="stylesheet">
+   <link href="NKL_layout.css" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <h1>
+         <img src="picture/cup_logo.png" alt="Happy Cup Cafe Logo">
+         <span class="headertitle" >Happy Cup Cafe</span> 
+      </h1>
+   </header>
+
+   <table class="product-container">
+      <tr class="product-header">
+         <th class="product name">Product</th>
+         <th class="price">Price</th>
+         <th class="quantity">Quantity</th>
+         <th class="total">Total</th>
+      </tr>
+   </table>
+
+   <br>
+   <a href="take_out.html">
+   <input id="hello" type="submit" onclick="Clear()" formaction="" value="Payment" >
+   </a>
+   <script>
+      function Clear() {
+         localStorage.clear();
+      }
+   </script>
+
+<script src="menupage.js"></script>
+
+
+
+</body>
+</html>

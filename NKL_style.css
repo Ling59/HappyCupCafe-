@@ -1,0 +1,157 @@
+/* Done by Naik Kok Loong only */
+html{
+   background-image: url('picture/Coffee_Cloud.png');
+   background-repeat: no-repeat ;
+   background-attachment: fixed;
+   background-size: 100% 100%;
+}
+
+body {
+   color: rgb(91,91,91);
+   background:linear-gradient(
+      to bottom,
+      #EFFFFD 0%,
+      #EFFFFD 10%,
+      #B8FFF9 20%,
+      #85F4FF 50%,
+      #42C2FF 70%,
+      #42C2FF 100%
+   );
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+header {
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-weight:bolder;
+   text-align: center;
+}
+
+span.headertitle {
+   font-size: 50px;
+}
+
+
+
+/* Heading Styles */
+.navbar li {
+   background-color: blue;
+}
+
+.navbar a {
+   text-decoration: none;
+   color:white;
+   width:100px;
+   display:block;
+   font-weight:bolder;
+}
+
+.navbar ul {
+   list-style-type: none;
+   margin: 20;
+   padding: 0;
+   text-align: center;
+}
+
+nav>ul>li a:link {
+   color: white;
+   text-decoration: none;
+}
+
+nav>ul>li a:hover {
+   color:red !important;
+   text-decoration:none;
+}
+
+
+a:link {
+    color: gold;
+    text-decoration: none;
+}
+ 
+
+a:hover {
+   color: red;
+   text-decoration: none;
+}
+
+
+div.food {
+    background: linear-gradient(
+       to bottom,
+       white 60%,
+       aqua 80%,
+       lime 90%,
+       white 100%
+    );
+ 
+}
+
+.column img{
+   border-radius: 50%;
+}
+
+
+#hello {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#hello:hover {
+   background-color: #45a049;
+}
+
+div.menuend input {
+   background-color: blue;
+   color: white;
+}
+
+div.menuend input:hover{
+  background-color: #45a049;
+}
+
+td.GToutput {
+	font-weight: bold;
+	text-align: right;
+}
+
+td.GTAmount {
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+@media screen and (max-width: 480px) {
+   header img {
+      margin-top: 3%;
+      width: 10%;
+      height: 10%;
+   }
+
+   span.headertitle {
+      font-size: 20px;
+   }
+
+   header h1 {
+		height: 57px;
+	}
+
+   a#Navbutton {
+      background-color: #85F4FF;
+   }
+
+   a#Navbutton img {
+		height: 20px;
+		width: 20px;
+		margin: auto;
+	}
+
+   .food label {
+      font-size: 15px;
+   }
+
+
+}

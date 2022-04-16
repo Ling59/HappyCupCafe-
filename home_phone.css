@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@media only screen and (max-width: 480px) {
+    body {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 480px;
+        min-width: 100px;
+    }
+    header p {
+        display: flex;
+    }
+    div#des {
+        display: flex;
+        width: 100%;
+    }
+    div h1#heading {
+        display: none;
+    }
+    a#more {
+        margin-top: 100px;
+        width: 100%;
+    }
+    #mes {
+        float: left;
+        display: flex;
+    }
+    #vid1 {
+        width: 200%;
+    }
+    div.navbar {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a#Navbutton {
+        width: 100%;
+        display: block;
+    }
+    nav.maybe ul {
+        display: none;
+    }
+    a#Navbutton:hover+ul,
+    nav.maybe ul:hover {
+        display: block;
+    }
+    nav.maybe ul li {
+        display: block;
+    }
+    .navbar li a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer div.row1 {
+        height: 500px;
+    }
+    footer div.column {
+        width: 100%;
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,905 @@
+
+@charset "UTF-8";
+
+/* Main Structural Styles */
+
+html{
+   background-image: url('Coffee_Cloud.png');
+   background-repeat: no-repeat ;
+   background-attachment: fixed;
+   background-size: 100% 100%;
+}
+
+.homepage1 {
+   position:relative;
+ 
+}
+
+.homepage2 {
+   position:relative;
+   
+
+}
+
+.homepage3 {
+   position:relative;
+   
+}
+
+
+
+/* unvisited link */
+   
+a:link {
+   color: gold;
+   text-decoration: none;
+ }
+ 
+ /* visited link */
+ a:visited {
+   color: gold;
+ }
+ 
+ /* mouse over link */
+ a:hover {
+   color:red ;
+ }
+
+ /*checkout station*/
+ 
+
+.cash {
+         position: absolute;
+         width: 25%;
+         height:25%;
+         }
+         
+.image {
+         opacity: 1;
+           display: block;
+           width: 100%;
+           height: auto;
+           transition: .5s ease;
+           backface-visibility: hidden;
+}
+
+.payment_methods{
+      
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight:bolder;
+      text-align: center;
+      font-size: 30px;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      color:ivory;
+   
+
+}  
+
+/*---------------------------------------------------circle----------------------------------*/
+
+/*--Change the second one--*/
+.payment_methods2{
+      
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-weight:bolder;
+   text-align: center;
+   font-size: 50px;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   color:ivory;
+
+
+}   
+.cash:hover .image {
+           opacity: 0.3;
+           
+}
+      
+.cash:hover .middle {
+   opacity: 1;
+   
+}
+
+
+
+         
+.text {
+           background-color: #4CAF50;
+           font-size: 10px;
+           color: white;
+           padding: 16px 32px;
+}
+
+
+/*For online banking*/
+.online_banking {
+   position: absolute;
+   width: 25%;
+   height:25%;
+   }
+   
+.image {
+   opacity: 1;
+     display: block;
+     width: 100%;
+     height: auto;
+     transition: .5s ease;
+     backface-visibility: hidden;
+}
+ 
+.middle {
+   transition: .5s ease;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%)
+}
+
+.online_banking:hover.image {
+     opacity: 0.3;
+}
+   
+   .online_banking:hover .middle {
+     opacity: 1;
+}
+   
+.text {
+     background-color: #4CAF50;
+     font-size: 16px;
+     color:white;
+     padding: 16px 32px;
+}
+.middle {
+   transition: .5s ease;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%)
+}
+/*for banking */
+.bank {
+   position:absolute;
+   width: 25%;
+   height: 19%;
+   }
+   
+.image {
+   opacity: 1;
+     display: block;
+     width: 100%;
+     height: auto;
+     transition: .5s ease;
+     backface-visibility: hidden;
+}
+   
+   
+.bank:hover.image {
+     opacity: 0.3;
+}
+   
+   .bank:hover .middle {
+     opacity: 1;
+}
+   
+.text {
+     background-color: #4CAF50;
+     font-size: 16px;
+     color:white;
+     padding: 16px 32px;
+}
+.middle {
+   transition: .5s ease;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%)
+}
+/*end of checkout stations*/
+        
+body{
+    min-height:100vh;
+   color: black;
+  
+   
+   
+   background:linear-gradient(
+      to bottom,
+      #EFFFFD 0%,
+      #EFFFFD 10%,
+      #B8FFF9 20%,
+      #85F4FF 50%,
+      #42C2FF 70%,
+      #42C2FF 100%
+   );
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+   
+ 
+}
+
+body div {
+   text-align: center;
+}
+
+body footer div{
+   text-align: left;
+}
+
+footer{
+   position:sticky;
+   top:100%;
+   background-color: Blue;
+    
+}
+
+/* Heading Styles */
+.navbar ul {
+   list-style-type: none;
+   margin: 20;
+   padding: 0;
+   text-align: center;
+ }
+
+
+ .navbar li {
+   display: inline-block;
+}
+ 
+ .navbar a {
+   text-decoration: none;
+   color:white;
+   width:100px;
+   display:block;
+   font-weight:bolder;
+
+}
+
+
+
+/*---------------------------------------------------------------------------------------*/
+header {
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-weight:bolder;
+   text-align: center;
+}
+
+body header p {
+   font-size: 50px;
+   font-weight:bolder;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-right: 30px;
+   margin-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navigation Styles */	
+
+body>nav selector{
+   font-size:0.8em;
+   line-height:2em;
+}
+
+nav>ul selector{
+   padding-left:5px;
+}
+
+nav>ul li:nth-child(6),
+nav>ul li:nth-child(16){
+   margin-top:20px;
+}
+
+nav>ul>li a:link{
+   color: rgb(151,151,151);
+   text-decoration: none;
+}
+
+nav>ul>li a:hover{
+   color:red;
+   text-decoration:underline;
+}
+
+
+/* Paragraph Styles */
+p{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-right: 30px;
+   margin-left: 0px;
+}
+
+
+
+
+/* List Styles */
+article.coach_bio > header >ul{
+   margin:0px;
+   margin-bottom: 10px;
+   list-style-image: url('check.png');
+    
+
+}
+
+/*Delivery Services Below */
+header {
+   text-align: center;
+}
+
+
+
+
+
+form div {
+   position: relative;
+   display: block;
+   float: left;
+   top: 5px;
+   width: 30%;
+   border: 1px solid blue;
+   margin: 3px;
+
+}
+
+fieldset {
+   margin: 20px;
+}
+
+button {
+   float: left;
+}
+
+legend {
+   background-color: rgb(49, 49, 175);
+   color: white;
+}
+
+fieldset#payment {
+   width: 80px;
+}
+
+fieldset#btnPay {
+   width: fit-content;
+}
+
+div#button {
+   border: none;
+   position: relative;
+}
+
+.Choose{
+   background-color: #090088;
+}
+
+#payMethod{
+   background-color: ivory;
+}
+
+
+/*Cash Money Payment */
+.Big_Joe{
+   /*border-style: solid;
+   border-width: 5px;
+   border-color: green;*/
+   position:relative;
+   left:-30%;
+   color:blue;
+   font-variant:small caps;
+   font-style:normal;
+   font-weight:bold;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-align: center;
+   text-shadow: 2px 2px 5px greenyellow;
+}
+.Joe1{
+   position:relative;
+   left:1%;
+}
+.Joe2{
+   position:relative;
+   left:1%;
+}
+.Joe3{
+   position:relative;
+   left:3%;
+}
+.Joe4{
+   position:relative;
+   left:0.5%;
+}
+.Joe5{
+   position:relative;
+   left:-1%;
+}
+.Joe6{
+   position:relative;
+   left:3%;
+}
+
+.Joe7{
+   color:white;
+   text-shadow: 2px 2px 5px green;
+   position:relative;
+   left :-30%;
+}
+
+.Joe8{
+   background-color: white;
+}
+
+#epayment{
+   display: grid;
+   grid-template-rows: 110px 110px 110px;
+   column-gap: 50px;
+   row-gap: 50px;
+   grid-template-columns: repeat(3, 200px);
+}
+.epayment{
+   background-color: #090088;
+   
+}
+.epayment img{
+   border-radius: 20%;
+   
+   
+   
+}
+
+#epay{
+   background-color: ivory;
+   position:relative;
+   
+}
+
+#chocolate{
+   background-color: blue;
+   position:relative;
+   left: 25%;
+   width: 45%;
+}
+
+#value{
+   background-color: ivory;
+   padding: 5px 10px
+   
+}
+input {
+      margin: 5px;
+    }
+
+
+
+/*Banking Method*/
+.bankpayment{
+   background-color: #090088;
+}
+
+#bank3{
+   background-color: ivory;
+}
+
+.Nice1{
+   position:relative;
+   left: -2%;
+}
+.Nice5{
+   position:relative;
+   left:4%;
+}
+
+.h4{
+   color:blue;
+}
+
+.returnHome{
+   position: relative;
+   left :1%;
+}
+
+.returnHome{
+   position: relative;
+   left :1%;
+}
+
+
+
+.ThankYou{
+   color:white;
+   font-variant:small caps;
+   font-style:normal;
+   font-weight:bold;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   position: relative;
+   left:40%;
+
+
+}
+
+.oval {
+  height: 100px;
+  width: 200px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+
+.container a{
+   color:blue;
+}
+
+
+
+
+
+
+
+/*New Menu*/
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+/* Next & previous buttons */
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev{
+   cursor: pointer;
+   position: relative;
+   left:-48%;
+   top: -150px;
+   width: auto;
+   padding: 16px;
+   margin-top: -22px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1000px;
+	min-width: 800px;
+}
+
+body div#banner {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#dishesbanner {
+	margin-top: 50px;
+	width:95%;
+	height:50px;
+}
+
+body aside div {
+	width:20%;
+    height: 250px;
+    margin: 2.5%;
+    float: left;
+    display: block;
+    border: solid 1px black;
+    box-sizing: border-box;
+}
+
+.Q{
+  height: 20px;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.Q span{
+  width: 33.3%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  
+}
+.Q span.num{
+  font-size: 20px;
+  border-right: 2px solid rgba(0,0,0,0.2);
+  border-left: 2px solid rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+
+/*Food Division*/
+div.food {
+   background: linear-gradient(
+      to bottom,
+      blue 0%,
+      white 55%,
+      red 100%
+   );
+  
+}
+
+
+
+/*Banner Sliding*/
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+/* Next & previous buttons */
+.prevbutton, .nextbutton {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextbutton {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevbutton:hover, .nextbutton:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+div.fade img {
+    height: 300px;
+}
+
+aside div {
+    width:20%;
+    height: 250px;
+    margin: 2.5%;
+    float: left;
+    display: block;
+    border: solid 1px black;
+    box-sizing: border-box;
+}
+
+
+
+
+div.food {
+   background: linear-gradient(
+      to bottom,
+      white 60%,
+      aqua 80%,
+      lime 90%,
+      white 100%
+   )};
+
+   
+div.cart_row {
+   background: linear-gradient(
+      to bottom,
+      white 60%,
+      aqua 80%,
+      lime 90%,
+      white 100%
+   )};
+
+   
+
+
+
+
+ div.products {
+   background-color: lightskyblue;
+   };
+
+   .products .item .item-container .add-to-cart {
+      background-color: rgb(242, 255, 58); 
+   }
+
+   .products .item .item-container .add-to-cart img {
+      width: 125px;
+      height: 35px;
+    }
+
+
+
+/*-------------------------------------------buttons-------------------------------------------*/
+
+div.row1 {
+	height: 300px;
+	background:linear-gradient(
+	   to bottom,
+	   #090088 0%,
+	   #090088 20%,
+	   blue 100%
+	);
+}
+
+div.column {
+	width: 33.33%;
+	float: left;
+	height: 250px;
+	top:100%;
+	color:white;
+	font-variant:small caps;
+	font-style:normal;
+	font-weight:bold;
+	font-size:0.9em;
+	line-height:3em;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-shadow: 2px 2px 5px blue;
+	padding-left: 10px;
+}
+
+
+div.small{	
+	clear: both; 
+	color: white;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 10px;
+}
+ 
+header h1 {
+	margin-bottom: 20px;
+	margin-right: 30px;
+	margin-left: 0px;
+}
+
+header img {
+	width: 60px;
+	height: 60px;
+}
+
+
+.navbar li {
+	display: inline-block;
+}
+
+a#Navbutton {
+	display: none;
+}
+
+header {
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-weight:bolder;
+   text-align: center;
+}
+
+span.headertitle {
+   font-size: 50px;
+}
+
+
+
+/* Heading Styles */
+.navbar li {
+   background-color: blue;
+}
+
+.navbar a {
+   text-decoration: none;
+   color:white;
+   width:100px;
+   display:block;
+   font-weight:bolder;
+}
+
+.navbar ul {
+   list-style-type: none;
+   margin: 20;
+   padding: 0;
+   text-align: center;
+}
+
+nav>ul>li a:link {
+   color: white;
+   text-decoration: none;
+}
+
+nav>ul>li a:hover {
+   color:red !important;
+   text-decoration:none;
+}
+
+
+a:link {
+    color: gold;
+    text-decoration: none;
+}
+ 
+
+a:hover {
+   color: red;
+   text-decoration: none;
+}

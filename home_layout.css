@@ -1,0 +1,138 @@
+@charset "utf-8";
+body {
+	width: 100%;
+	max-width: 1000px;
+	min-width: 800px;
+}
+/*Checkout Section*/
+div.cash {
+	position:relative;
+	top:-450px;
+	left:100px;
+
+  }
+
+  div.online_banking {
+	position: relative;
+	top:-600px;
+	left:700px;
+
+  }
+
+  div.bank{
+	position: relative;
+	bottom:333px;
+	left:400px;
+
+  }
+
+  div.column img{
+	border-radius: 50%
+ }
+
+  /*------Move Here----*/
+
+  div.rainbow2 {
+	position:relative;
+	top:-650px;
+	left:-300px;
+
+  }
+
+  div.shiny2 {
+	position: relative;
+	top:-950px;
+	left:300px;
+
+  }
+
+  div.shock2{
+	position: relative;
+	bottom:883px;
+	left:300px;
+
+  }
+
+  div.wink2{
+	position: relative;
+	bottom:653px;
+	left:-300px;
+
+  }
+
+  div.options{
+	  position:relative;
+	  top: 100px;
+	  left: 30px;
+  }
+
+  div.options2{
+	position:relative;
+	top: 150px;
+	left: 30px;
+}
+/*end of checkout station*/
+
+
+.payment_methods{
+	position:relative;
+	top: -100px;
+	left: 500px;
+	transform: translate(-50%, -50%)
+ }
+
+ .payment_methods2{
+	position:relative;
+	top: -150px;
+	left: 500px;
+	transform: translate(-50%, -50%)
+ }
+
+
+
+body > header {
+	margin: 0;
+	padding: 0px;
+	width: 100%;
+	overflow: hidden;
+}
+
+body > header > img {
+	margin: 0px;
+	padding: 0px;
+}
+
+body > nav {
+	width: 20%;
+	float: left;
+	margin: 0 0 0 2%;
+}
+
+
+
+aside div {
+    width:20%;
+    height: 250px;
+    margin: 2.5%;
+    float: left;
+    display: block;
+    border: solid 1px black;
+    box-sizing: border-box;
+}
+
+body > footer {
+	width: 100%;
+	clear: left;
+}
+
+
+
+body > footer {
+	width: 100%;
+	clear: left;
+}
+
+
+
+
+

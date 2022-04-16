@@ -1,0 +1,400 @@
+<!doctype html>
+<html>
+<head>
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>E-Wallet Option</title>
+   <link href="reset.css" rel="stylesheet">
+   <link rel="stylesheet" href="home_layout.css"/>
+   <link rel="stylesheet" href="home_styles.css"/>
+   <link rel="stylesheet" href="home_phone.css" />
+   
+   
+</head>
+<body>
+   <header>
+      <p>
+      <img src="home_logo.png" alt="Happy Cup Cafe Logo" width="100" height="100">
+      Happy Cup Cafe
+      </p>
+   </header>
+  
+   <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+
+   
+ <style>
+
+    body {
+      font-family: Arial;
+      font-size: 17px;
+      padding: 8px;
+      color:blue;
+    }
+
+    address p{
+       color:white;
+
+     }
+
+    p{
+        color:black;
+    }
+    
+    * {
+      box-sizing: border-box;
+      
+    }
+    
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      margin: 0px;
+      display: block;
+    align-items: center;
+    }
+    
+    .col-25 {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+    }
+    
+    .col-50 {
+      -ms-flex: 50%; /* IE10 */
+      flex: 50%;
+    }
+    
+    .col-75 {
+      -ms-flex: 75%; /* IE10 */
+      flex: 75%;
+    }
+    
+    .col-25,
+    .col-50,
+    .col-75 {
+      padding: 0 16px;
+    }
+    
+    .container {
+      background-color: #00d0f9;
+      padding: 5px 20px 15px 20px;
+      border: 1px solid blue;
+      border-radius: 3px;
+    }
+    .container1 {
+      position: relative;
+    width:450px;
+    left:480px;
+    bottom:700px;
+    background-color: #00d0f9;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid blue;
+    border-radius: 3px;
+    
+    }
+    
+    input[type=text] {
+      width: 100%;
+      margin-bottom: 35px;
+      padding: 12px;
+      border: 1px solid blue;
+      border-radius: 3px;
+    }
+    
+    label {
+      
+      display: block;
+    }
+    
+    .icon-container {
+      margin-bottom: 20px;
+      padding: 7px 0;
+      font-size: 24px;
+    }
+    
+    .btn {
+      background-color: blue;
+      color: white;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      width: 100%;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    
+    .btn:hover {
+      background-color: #45a049;
+    }
+    
+    a {
+      color: red;
+    }
+    
+    hr {
+      border: 1px solid lightgrey;
+    }
+    
+    span.price {
+      float: right;
+      color: grey;
+    }
+    
+    
+    </style>
+    </head>
+    <body>
+   
+    
+    <div class="row">
+      <div class="col-50">
+        <div class="container">
+          <fieldset id="epay">
+    <legend>Checkout Form</legend> 
+          
+            <div class="row">
+              <div class="col-75">
+                <br/>
+                <form action=ThankYoupage.html>
+                <label for="fname"><i class="fa fa-user"></i> Customer's Full Name *</label>
+                <input type="text" id="fname" name="firstname" placeholder="Ling Chia Hang" required>
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="tkg.nishi777@gmail.com">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address *</label>
+                <input type="text" id="adr" name="address" placeholder="1600 Pennsylvania Avenue" required>
+                <label for="city"><i class="fa fa-institution"></i> City *</label>
+                <input type="text" id="city" name="city" placeholder="Mentakab" required>
+                <label for="telephone">Telephone no *</label> <input type="text" id="telephone" name="telephone" placeholder="012-345 6789" pattern="[0-9]{10}"required>
+                  
+                   
+                    <br/>
+                
+                     
+                        <label for="state" >State</label> 
+                        <select id = "state" name ="state" size="1" >
+                           <option value="Johor">Johor</option>
+                           <option value="Kedah">Kedah</option>
+                           <option value="Kelantan">Kelantan</option>
+                           <option value="Melaka">Melaka</option>
+                           <option value="N.Sembilan">Negeri Sembilan</option>
+                           <option value="Pahang"selected>Pahang</option>
+                           <option value="P.Pinang">Pulau Pinang</option>
+                           <option value="Perak">Perak</option>
+                           <option value="Perlis">Perlis</option>
+                           <option value="Selangor">Selangor</option>
+                           <option value="Sarawak">Sarawak</option>
+                           <option value="Sabah">Sabah</option>
+                           <option value="Terengganu">Terengganu</option>
+                           
+                
+                            </select>
+                            <br/>
+                            <br/>
+                            
+                    <label for="zip">Zip *</label>
+                    <input type="text" id="zip" name="zip" placeholder="28400" pattern="[0-9]{5}" required>
+                  </div>
+
+
+                  <legend>E-Wallet</legend>
+    
+               
+                   <div style="color:black;
+                   position:relative;
+                   padding: 5px 20px 15px 20px;
+                   color:blue;
+                   border-radius: 3px;
+                   font-variant:small caps;
+                   font-style:normal;
+                   font-weight:bold;
+                   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                   text-align: center; ">Please select your preferred e-wallet company for your purchase</div>
+               
+
+   <div class="Joe8">
+   
+   
+    
+                      <fieldset id="epayment">
+                       <legend>E-Wallet Company Logo</legend>
+                       
+                       <div class="epayment">
+                           <input type="radio" name="epayment" value="epayment1" required>
+                           <img src="GrabLogo.png" alt="epayment1" width="100" height="100">
+                       </div>
+                       <div class="epayment">
+                           <input type="radio" name="epayment" value="epayment2">
+                           <img src="Touch_n_Go.png" alt="epayment2" width="100" height="100">
+                       </div>
+                       <div class="epayment">
+                           <input type="radio" name="epayment" value="epayment3">
+                           <img src="Boost.png" alt="epayment3" width="100" height="100">
+                       </div>
+                       <div class="epayment">
+                           <input type="radio" name="epayment" value="epayment4">
+                           <img src="MAE.png" alt="epayment4" width="100" height="100">
+                       </div>
+                       <div class="epayment">
+                           <input type="radio" name="epayment" value="epayment5">
+                           <img src="Alipay.png" alt="epayment5" width="100" height="100">
+                       </div>
+                       <div class="epayment">
+                           <input type="radio" name="epayment" value="epayment6">
+                           <img src="Shoppe.png" alt="epayment6" width="100" height="100">
+                       </div>
+                       <div class="epayment">
+                           <input type="radio" name="epayment" value="epayment7">
+                           <img src="Fpay.png" alt="epayment7" width="100" height="100">
+                       </div>
+                       <div class="epayment">
+                           <input type="radio" name="epayment" value="epayment8">
+                           <img src="Mcash.png" alt="epayment8" width="100" height="100">
+                       </div>
+                       <div class="epayment">
+                           <input type="radio" name="epayment" value="epayment9">
+                           <img src="WeChat.png" alt="epayment9" width="100" height="100">
+                       </div>
+                      </fieldset>
+    
+               
+   </div>
+                  <br/>
+                  <br/>
+                  <form action="ThankYoupage.html">
+                    <label for="OTP">Enter OTP code *</label>  
+                         <input type="text" id="OTPnum" name="OTPnum" placeholder="12-34-56" pattern="[0-9]{6}" required>
+       
+            
+       
+       
+       
+                         
+                     <input type="submit" value="Submit Payment" class="btn">
+                   </form>
+       
+                     
+              
+                    <div class="returnHome">
+                       <p>
+                           <a href="cup_home.html">
+                          <img border="0" alt="return home picture" src="returnHome.png" width="70" height="70"></a>
+                          
+                       
+                          </p>
+                         
+                       </div> 
+                
+                  </form>
+            </div>
+                  </div>
+                     
+              </div>
+    
+              <div class="col-50">
+                
+                
+                
+                
+                  
+                
+                </div>
+              </div>
+              
+            </div>
+            
+
+          
+
+        </div>
+      </div>
+     
+    </div>
+</fieldset>
+
+   
+   
+  
+   <div class="row">
+      <div class="container">
+        
+        
+          <div class="row">
+            <div class="col-50">
+                <fieldset id="epay">
+            <legend>OTP code request</legend><br/>
+                 <br/>
+                 
+                  <label for="telephone_number">Please fill in the telephone number</label> 
+                   <input type="text" id="telephone" name="telephone" placeholder="For request of OTP code" pattern="[0-9]{10}"required>
+
+                  <button onclick="myFunction()">OTP request</button>
+
+                  <script>
+                  function myFunction() {
+                    alert("The OTP CODE has been sent to the telephone number filled above.");
+                  }
+                  </script>
+
+              </form>
+              <br/>
+              <br/>
+              <br/>
+              
+        
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<footer>    
+  <div class="row1">
+     <div class="column">
+         <p>About us:
+            <br/>
+            <a href="cup_support.html">Vision and Mission</a>
+            <br/>
+            <a href="cup_awards.html">Our Proudest Accomplishment</a>
+            <br/>
+            <a href="cup_coffee.html">Our Pride and Joy</a>
+            
+         </p>
+  
+     </div>
+  
+     <div class="column">
+         <p>Contact us:<br/>
+            <img src="email.png" alt="telephone" width="30" height="30">
+            <a href="mailto:webmaster@example.com">Email address</a>
+            <br/>
+            <img src="telephone.png" alt="telephone" width="30" height="30" >
+            <a href="tel:+1234567890">Telephone Number</a><br/>
+         </p>
+     </div>
+  
+     <div class="column">
+         <p>Sitemap:
+            <br/>
+            <a href="Privacy_Policy.html">Privacy Policy</a>
+         </p>
+         <img id="logo" src="cup_logo.png" alt="Happy Cup Cafe Logo" width="150" height="150">
+     </div>
+  
+  
+     <div class="small">
+        Copyright &#169; Happy Cup Cafe INC. All rights reserved
+     </div>
+     
+  </div>
+  </footer>
+
+    
+</body>
+</html>

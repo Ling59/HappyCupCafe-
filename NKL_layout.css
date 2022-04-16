@@ -1,0 +1,372 @@
+/* Done by Naik Kok Loong only */
+body {
+	width: 100%;
+	max-width: 1000px;
+	min-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header h1 {
+	margin-bottom: 20px;
+	margin-right: 30px;
+	margin-left: 0px;
+}
+
+header img {
+	width: 60px;
+	height: 60px;
+}
+
+
+.navbar li {
+	display: inline-block;
+}
+
+a#Navbutton {
+	display: none;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+  
+/* Next & previous buttons */
+.prevbutton, .nextbutton {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextbutton {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevbutton:hover, .nextbutton:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+div.fade img {
+    height: 300px;
+}
+
+aside#MenuPicAni div {
+    width:20%;
+    height: 250px;
+    margin: 2.5%;
+    float: left;
+    display: block;
+    border: solid 1px black;
+	border-radius: 15px;
+	overflow: hidden;
+    box-sizing: border-box;
+}
+
+body > footer {
+	width: 100%;
+	clear: left;
+}
+
+#MenuPicAni div img {
+	transform: scale(1,1);
+	transition: all 1.5s;
+}
+
+#MenuPicAni div img:hover {
+	transform: scale(1.2,1.2);
+}
+
+/* footer */
+div.row1 {
+	margin-top: 50px;
+	height: 300px;
+	background:linear-gradient(
+	   to bottom,
+	   #090088 0%,
+	   #090088 20%,
+	   blue 100%
+	);
+}
+
+div.column {
+	width: 33.33%;
+	float: left;
+	height: 250px;
+	top:100%;
+	color:white;
+	font-variant:small caps;
+	font-style:normal;
+	font-weight:bold;
+	font-size:0.9em;
+	line-height:3em;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-shadow: 2px 2px 5px blue;
+	padding-left: 10px;
+}
+
+div.small{	
+	clear: both; 
+	color: white;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 10px;
+}
+
+
+
+
+
+
+/* Product Page */
+div#menupagebigbanner {
+	width: 90%;
+	height: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#dishesbanner {
+	margin-top: 100px;
+	width:95%;
+	height: 55px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+
+#dishesbanner img {
+	width: 100%;
+	height: 100%;
+}
+
+div.food {
+	width:20%;
+	height: 250px;
+	margin: 2.5%;
+	margin-bottom: 30px;
+	float: left;
+	display: block;
+	border: solid 1px black;
+	border-radius: 10px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+div.food img {
+  width: 100%;
+  height:55%;
+}
+
+div.food {
+  text-align: center;  
+}
+
+
+div.food input {
+	border: 1px solid black;
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+}
+
+div.menuend {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.menuend input {
+	height: 5%;
+	width: 39%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+
+/*---------------------------------------------*/
+/*Price Display Page*/
+table.product-container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+
+table.product-container th {
+	border-bottom: 2px solid grey;
+	height: 60px;
+}
+
+tr.header {
+	text-align: center;
+	height: 50px;
+}
+
+tr.GrandTotal {
+	height: 70px;
+	border-top: 1px solid black;
+}
+
+#hello {
+    display: block;
+    float: right;
+    width: 150px;
+    height: 30px;
+}
+
+
+
+/*----------------------------Mobile Screen--------------------------*/
+@media screen and (max-width: 480px) {
+	body {
+		display: flex;
+		flex-flow: row wrap;
+		max-width: 480px;
+		min-width: 100px;
+	}
+
+	body header {
+		width: 100%;
+	}
+
+	header img {
+		width: 10%;
+		height: 70%;
+	}
+
+	a#Navbutton {
+		width: 100%;
+		display: block;
+	}
+
+	nav.maybe ul {
+		display: none;
+	}
+
+	a#Navbutton:hover+ul, nav.maybe ul:hover {
+		display: block;
+	}
+
+	nav.maybe ul li {
+		display: block;
+	}
+
+	.navbar li a {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.menuend {
+		display: flex;
+		width: 70%;
+	}
+
+    .slideshow-container {
+        float: left;
+    }
+
+	div.dots {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	aside#MenuPicAni {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	aside#MenuPicAni div {
+		flex-basis: 200px;
+		flex-grow: 0;
+		flex-shrink: 1;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	footer div.row1 {
+		height: 800px;
+	}
+
+	footer div.column {
+		width: 100%;
+		margin-left: 50px;
+	}
+
+
+	aside {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	div.food {
+		flex: 0 1 125px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	#hello {
+		margin-left: auto;
+		bottom: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

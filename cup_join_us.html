@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Join Us</title>
+   <link href="reset.css" rel="stylesheet">
+   <link href="NKL_style.css" rel="stylesheet">
+   <link href="NKL_layout.css" rel="stylesheet">
+
+   <script src="form"></script>
+
+   <style>
+      h2.join_us1{
+         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         font-weight: bold;
+         font-size: 1.6em;
+         margin: 3% auto auto 6%;
+      }
+
+      img.join_us{
+         
+         margin: 2% 3% auto auto;
+      }
+
+      article.join_us2{
+         background-color: lavender;
+         color: black;
+         width: 64%;
+         margin: 2% auto 5% 3%;
+         padding: 3%;
+      }
+
+      div.join_us4{
+         margin: 3%;
+      }
+
+      p.resume{
+         font-size: 0.8em;
+      }
+
+      div.join_us_button{
+         margin: 4% auto 2% 62%;
+      }
+
+      .column img{
+         border-radius: 50%
+      }
+
+      .column {
+         float: left;
+         width: 33.33%;
+         padding: 20px;
+         height: 400px;
+         position:sticky;
+         top:100%;
+         background:linear-gradient(
+         to bottom,
+         #090088 0%,
+         #090088 20%,
+         blue 100%
+         );
+         color:white;
+         font-variant:small caps;
+         font-style:normal;
+         font-weight:bold;
+         font-size:0.9em;
+         line-height:3em;
+         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         text-align: center;
+         text-shadow: 2px 2px 5px blue;
+      }
+
+      .row1:after {
+         content: "";
+         display: table;
+         clear: both;
+      }
+
+      .small{
+         font-size: 10px;
+      }
+
+      @media (max-width:500px) {
+         body{
+            min-width: 50%;
+         }
+         
+         img.join_us{
+            width: 50%;
+            margin: 2% 0;
+         }
+
+         article.join_us2{
+            width: 90%;
+            margin-left: 0;
+         }
+      }
+   </style>
+
+</head>
+
+<body>
+   <header>
+         <h1>
+            <img src="home_logo.png" alt="Happy Cup Cafe Logo"width="100" height="100">
+            <span class="headertitle" >Happy Cup Cafe</span> 
+         </h1>
+         
+   </header>
+
+   <h2 class="join_us1">Join Us</h2>
+
+   <img class="join_us" src="join_us.png" alt="Join our team" align="right">
+
+   <article class="join_us2">
+      <p>
+         Interested in joining our team but anxious of having no experience?
+         Fear not, as we have experienced kitchen staffs and service crew to provide on the go training.
+         Just submit your application in the form below and we will appoint an interview with you.
+         Or you can contact us through our contact information provided down below.
+      </p>
+
+      <br>
+
+      <div id="error"></div>
+
+      <form class="join_us3" action="submitted_form.html" method="get" enctype="multipart/form-data">
+         <div class="join_us4">
+            <label for="name">Your Name*</label>
+            <input type="text" name="Name" id="name" required placeholder="Tan Ah Li">
+         </div>
+
+         <div class="join_us4">
+            <label for="ic">IC Number*</label>
+            <input type="tel" name="IC Number" id="ic" required placeholder="101010-10-1010">
+         </div>
+
+         <div class="join_us4">
+            <label for="email">Email Address*</label>
+            <input type="email" name="Email Address" id="email" required placeholder="tanahli@gmail.com">
+         </div>
+
+         <div class="join_us4">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="Phone Number" id="phone" placeholder="010-10101010">
+         </div>
+
+         <div class="join_us4">
+            <label for="position">Position</label>
+            <select name="Position" id="position">
+               <option value="Kitchen Staff">Kitchen Staff</option>
+               <option value="Service Crew">Service Crew</option>
+            </select>
+         </div>
+
+         <div class="join_us4">
+            <label for="work_hour">Working hours</label>
+            <select name="Working Hours" id="work_hour">
+               <option value="Full Time">Full Time</option>
+               <option value="Part Time">Part Time</option>
+            </select>
+         </div>
+
+         <div class="join_us4">
+            <label for="file">Upload Resume</label>
+            <input type="file" name="File" id="file">
+            <p class="resume">*A hardcopy of the resume is required upon interview.</p>
+         </div>
+
+         <div class="join_us_button">
+            <button type="reset">Reset Form</button>
+            <button type="submit">Submit Application</button>
+         </div>
+      </form>
+
+
+   </article>
+
+   <footer>    
+      <div class="row1">
+         <div class="column">
+             <p>About us:
+                <br/>
+                <a href="cup_support.html">Vision and Mission</a>
+                <br/>
+                <a href="cup_awards.html">Our Proudest Accomplishment</a>
+                <br/>
+                <a href="cup_coffee.html">Our Pride and Joy</a>
+                
+             </p>
+      
+         </div>
+      
+         <div class="column">
+             <p>Contact us:<br/>
+                <img src="email.png" alt="telephone" width="30" height="30">
+                <a href="mailto:webmaster@example.com">Email address</a>
+                <br/>
+                <img src="telephone.png" alt="telephone" width="30" height="30" >
+                <a href="tel:+1234567890">Telephone Number</a><br/>
+             </p>
+         </div>
+      
+         <div class="column">
+             <p>Sitemap:
+                <br/>
+                <a href="Privacy_Policy.html">Privacy Policy</a>
+             </p>
+             <img id="logo" src="cup_logo.png" alt="Happy Cup Cafe Logo" width="150" height="150">
+         </div>
+      
+      
+         <div class="small">
+            Copyright &#169; Happy Cup Cafe INC. All rights reserved
+         </div>
+         
+      </div>
+      </footer>
+
+   
+
+</body>

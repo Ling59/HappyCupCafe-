@@ -1,0 +1,225 @@
+<!DOCTYPE >
+<html>
+<head>
+   <meta charset="UTF-8"> 
+   <title>Dinner</title>
+   
+   <link href="reset.css" rel="stylesheet">
+   <link href="NKL_style.css" rel="stylesheet">
+   <link href="NKL_layout.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="picture/cup_logo.png" alt="Happy Cup Cafe Logo">
+            <span class="headertitle">Happy Cup Cafe</span>
+        </h1>
+    </header>
+
+    <div id="menupagebigbanner">
+        <img src="picture/dinnerbanner.png" alt="banner" width="100%" height="250"  />
+    </div>
+
+    <form id="Dinner" name="Dinner">
+        <aside>
+            <div id="dishesbanner">
+                <img src="picture/maindishes.jpg" alt="dishesbanner" />
+            </div>
+
+
+                <div class="food">
+                    <img src="picture/Dinner1.jpeg" alt="food1"/>
+                    <input class="Dinner" type="number" id="Dinner1" name="Chicken Rice" step="1" value="0" min="0" max="10">
+                    <label for="Dinner1">
+                        Chicken Rice
+                        <br/>
+                        RM 8.00
+                    </label>
+                </div>
+
+                <div class="food">
+                    <img src="picture/Dinner2.jpeg" alt="food2"/>
+                    <input class="Dinner" type="number" id="Dinner2" name="Laksa Prawn Soup" step="1" value="0" min="0" max="10">
+                    <label for="Dinner2">
+                        Laksa Prawn Soup
+                        <br/>
+                        RM 9.00
+                    </label>
+                </div>
+
+                <div class="food">
+                    <img src="picture/Dinner3.jpeg" alt="food3"/>
+                    <input class="Dinner" type="number" id="Dinner3" name="Beef Noodles" step="1" value="0" min="0" max="10">
+                    <label for="Dinner3">
+                        Beef Noodles
+                        <br/>
+                        RM 10.00
+                    </label>
+                </div>
+
+                <div class="food">
+                    <img src="picture/Dinner4.jpeg" alt="food4"/>
+                    <input class="Dinner" type="number" id="Dinner4" name="Porridge" step="1" value="0" min="0" max="10">
+                    <label for="Dinner4">
+                        Porridge
+                        <br/>
+                        RM 7.50
+                    </label>
+                </div>
+        </aside>
+
+        <aside>
+            <div id="dishesbanner">
+                <img src="picture/drinks.jpg" alt="dishesbanner" />
+            </div>
+
+                <div class="food">
+                    <img src="picture/Drink1.jpg" alt="Drink1"/>
+                    <input class="Dinner" type="number" id="Drink1" name="BlackTeaH" step="1" value="0" min="0" max="10">
+                    <label for="Drink1">
+                        Black Tea (Hot)
+                        <br/>
+                        RM 1.70
+                    </label>
+                </div>
+
+                <div class="food">
+                    <img src="picture/Drink2.jpg" alt="Drink2"   />
+                    <input class="Dinner" type="number" id="Drink2" name="BlackTeaC" step="1" value="0" min="0" max="10">
+                    <label for="Drink2">
+                        Black Tea (Cold)
+                        <br/>
+                        RM 1.70
+                    </label>
+                </div>
+
+                <div class="food">
+                    <img src="picture/Drink3.jpg" alt="Drink3"   />
+                    <input class="Dinner" type="number" id="Drink3" name="SoyaMilk" step="1" value="0" min="0" max="10">
+                    <label for="Drink3">
+                        Soya Milk 
+                        <br/>
+                        RM 1.70
+                    </label>
+                </div>
+
+                <div class="food">
+                    <img src="picture/Drink4.jpg" alt="Drink4"   />
+                    <input class="Dinner" type="number" id="Drink4" name="LimeDrink" step="1" value="0" min="0" max="10">
+                    <label for="Drink4">
+                        Lime Drink
+                        <br/>
+                        RM 1.70
+                    </label>
+                </div>
+        </aside>
+
+        <aside>
+            <div id="dishesbanner">
+                <img src="picture/desserts.jpg" alt="dishesbanner" />
+            </div>
+
+                <div class="food">
+                    <img src="picture/Add-on1.png" alt="Add-on1"   />
+                    <input class="Dinner" type="number" id="Addon1" name="IceDream" step="1" value="0" min="0" max="10">
+                    <label for="Addon1">
+                        Ice Cream
+                        <br/>
+                        RM 5.60
+                    </label>
+                </div>
+
+                <div class="food">
+                    <img src="picture/Add-on2.png" alt="Add-on2"   />
+                    <input class="Dinner" type="number" id="Addon2" name="IcaKacang" step="1" value="0" min="0" max="10">
+                    <label for="Addon2">
+                        Ice Kacang
+                        <br/>
+                        RM 3.40
+                    </label>
+                </div>
+
+                <div class="food">
+                    <img src="picture/Add-on3.png" alt="Add-on3"   />
+                    <input class="Dinner" type="number" id="Addon3" name="Nugget" step="1" value="0" min="0" max="10">
+                    <label for="Addon3">
+                        Nugget
+                        <br/>
+                        RM 3.20
+                    </label>
+                </div>
+
+                <div class="food">
+                    <img src="picture/Add-on4.png" alt="Add-on4"   />
+                    <input class="Dinner" type="number" id="Addon4" name="CurryPuff" step="1" value="0" min="0" max="10">
+                    <label for="Addon4">
+                        Curry Puff
+                        <br/>
+                        RM 2.80
+                    </label>
+                </div>
+        </aside>
+
+        <div class="menuend">
+            <input type="submit" formaction="PriceDisplayPage.html" value="Submit Order" />
+            <input type="button" value="Cancel Order" onclick="cancelorder()" />
+        </div>
+    </form>
+
+    <script>
+        function cancelorder () {
+            var is_cancel = confirm("Are you sure you want to cancel your order?")
+            
+            if(is_cancel) {
+                window.location.reload();
+                localStorage.clear();
+            } else {
+
+            }
+        }
+    </script> 
+    <script src="menupage.js"></script>
+
+    <footer>
+        <div class="row1">
+            <div class="row1">
+                <div class="column">
+                    <p>About us:
+                       <br/>
+                       <a href="cup_support.html">Vision and Mission</a>
+                       <br/>
+                       <a href="cup_awards.html">Our Proudest Accomplishment</a>
+                       <br/>
+                       <a href="cup_coffee.html">Our Pride and Joy</a>
+                       
+                    </p>
+            
+                </div>
+            
+                <div class="column">
+                    <p>Contact us:<br/>
+                       <img src="picture/email.png" alt="telephone" width="30" height="30">
+                       <a href="mailto:webmaster@example.com">Email address</a>
+                       <br/>
+                       <img src="picture/telephone.png" alt="telephone" width="30" height="30" >
+                       <a href="tel:+1234567890">Telephone Number</a><br/>
+                    </p>
+                </div>
+            
+                <div class="column">
+                    <p>Sitemap:
+                       <br/>
+                       <a href="Privacy_Policy.html">Privacy Policy</a>
+                    </p>
+                    <img id="logo" src="picture/cup_logo.png" alt="Happy Cup Cafe Logo" width="150" height="150">
+                </div>
+            
+            
+                <div class="small">
+                   Copyright &#169; Happy Cup Cafe INC. All rights reserved
+                </div>
+            </div>
+     </footer>
+
+</body>
+</html>
